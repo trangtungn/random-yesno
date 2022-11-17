@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'random_yesno'
+
+puts RandomYesNo.show # ARGV[0] for :force
