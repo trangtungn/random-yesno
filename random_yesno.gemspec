@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 3.1'
   spec.name = 'random_yesno'
-  spec.homepage    = 'https://i-love-ruby.gitlab.io'
+  spec.homepage    = 'https://github.com/trangtungn/random-yesno'
   spec.version     = '0.1.0'
   spec.date        = '2022-11-15'
   spec.summary     = 'Generates random yes/no gifs'
