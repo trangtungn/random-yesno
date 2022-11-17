@@ -15,11 +15,13 @@ Or install:
 
 ```
 RandomUsername.show
+
 => {"answer"=>"no", "forced"=>false, "image"=>"https://yesno.wtf/assets/no/6-4bf0a784c173f70a0cab96efd9ff80c9.gif"}
 ```
 
 ```
 $ ruby -Ilib ./bin/yesno
+
 => {"answer"=>"no", "forced"=>false, "image"=>"https://yesno.wtf/assets/no/6-4bf0a784c173f70a0cab96efd9ff80c9.gif"}
 ```
 
