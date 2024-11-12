@@ -12,6 +12,7 @@ group :development do
 end
 
 group :test do
+  gem 'minitest'
   gem 'rspec'
   gem 'rspec-json_expectations'
 end
