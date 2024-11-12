@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'minitest/autorun'
-require 'random_yesno'
+require_relative '../lib/random_yesno'
 
 class TestRandomYesNo < Minitest::Test
   def test_show
