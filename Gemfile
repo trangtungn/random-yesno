@@ -6,6 +6,10 @@ source 'http://rubygems.org'
 # dependencies specified in the gemspec
 gemspec
 
+group :development do
+  gem 'yard'
+end
+
 group :test do
   gem 'rspec'
   gem 'rspec-json_expectations'
