@@ -8,6 +8,7 @@ gemspec
 
 group :development do
   gem 'yard'
+  gem 'rake'
 end
 
 group :test do
