@@ -25,14 +25,57 @@ $ ruby -Ilib ./bin/yesno
 => {"answer"=>"no", "forced"=>false, "image"=>"https://yesno.wtf/assets/no/6-4bf0a784c173f70a0cab96efd9ff80c9.gif"}
 ```
 
-# Contributing
+# Development
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Include tests with your changes (run `rake` to test)
-4. Commit your changes (`git commit -am 'Add some feature'`)
-5. Push to the branch (`git push origin my-new-feature`)
-6. Create new Pull Request
+1. Run the GitHub Actions workflow locally:
+
+- Install `act` (macOS using Homebrew)
+
+```
+brew install act
+```
+
+- Run the workflow
+
+```
+# Run all actions
+act
+
+# Run a specific job
+act -j test
+
+# Run with verbose output
+act -v
+
+# List all actions
+act -l
+```
+
+- Error may occur with `act`:
+
+```
+Error: failed to start container: Error response from daemon: error while creating mount source path '/host_mnt/Users/trangtungn/.docker/run/docker.sock': mkdir /host_mnt/Users/trangtungn/.docker/run/docker.sock: operation not supported
+```
+
+- Solution:
+
+```
+# List Docker contexts to get your docker endpoint:
+# For example: `unix:///Users/<user>/.docker/run/docker.sock`
+docker context ls
+
+# Set Docker host
+export DOCKER_HOST=unix:///var/run/docker.sock
+
+# Create a symbolic link to the Docker socket
+ln -sf /Users/<user>/.docker/run/docker.sock /var/run/docker.sock
+
+# Set the override path
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+```
+
+More details: https://github.com/testcontainers/testcontainers-java/issues/8170#issuecomment-2176223774
+
 
 # Reference
 
