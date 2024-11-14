@@ -8,11 +8,9 @@ gemspec
 
 group :development do
   gem 'yard'
-  gem 'rake'
 end
 
 group :test do
-  gem 'minitest'
   gem 'rspec'
   gem 'rspec-json_expectations'
 end

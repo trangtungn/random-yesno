@@ -14,5 +14,4 @@ Gem::Specification.new do |spec|
   spec.files = Dir['{lib}/**/*.rb', 'bin/*', '*.md']
   spec.require_path = 'lib'
   spec.executables << 'yesno'
-  spec.test_files << 'test/test_random_yesno.rb'
 end
