@@ -25,6 +25,20 @@ $ ruby -Ilib ./bin/yesno
 => {"answer"=>"no", "forced"=>false, "image"=>"https://yesno.wtf/assets/no/6-4bf0a784c173f70a0cab96efd9ff80c9.gif"}
 ```
 
+# Attribution
+
+The GIF files used in this project are sourced from [GIPHY](https://giphy.com) for non-commercial use. This is a fun project intended for educational purposes.
+
+# Future Plans
+
+Currently, the GIF files are hosted in the GitHub repository. In future versions, we plan to:
+- Move the GIF files to a proper CDN or cloud storage (AWS S3)
+- Implement caching mechanisms
+- Add more reaction GIFs
+- Support custom GIF collections
+
+Contributions and suggestions are welcome!
+
 # Development
 
 1. Run the GitHub Actions workflow locally:
